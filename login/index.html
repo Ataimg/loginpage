@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Giris Yap</button>
+                <button type="button" class="toggle-btn" onclick="register()">Kayit Ol</button>
+            </div>
+            <div class="social-icons">
+                    <a href="https://www.facebook.com/ataoqlu41"><img src="fb.png"></a>
+                    <a href="https://twitter.com/ataimg"><img src="tw.png"></a>
+                    <a href="mailto:cesataoglu@gmail.com"><img src="gp.png"></a> 
+
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" name="kullanici_adi" class="input-field" placeholder="Kullanici Adi" required>
+                <input type="password" name="sifre" class="input-field" placeholder="Sifre" required>
+                <input type="checkbox" class="check-box"> <span>Sifremi Hatirla</span>
+                <button type="submit" class="submit-btn">Giris Yap</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" name="kullanici_adi" class="input-field" placeholder="Kullanici Adi" required>
+                <input type="email" name="mail" class="input-field" placeholder="Email" required>
+                <input type="password" name="sifre" class="input-field" placeholder="Sifre" required>
+                <input type="checkbox" class="check-box"> <span>Gizlilik politikasini kabul ediyorum</span>
+                <button type="submit" class="submit-btn">Kayit Ol</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+    </script>
+</body>
+</html>
